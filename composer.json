@@ -1,0 +1,19 @@
+{
+  "name": "jetbrains/phpstorm-attributes",
+  "description": "PhpStorm specific attributes",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "JetBrains",
+      "homepage": "https://www.jetbrains.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "JetBrains\\PhpStorm\\": "src/"
+    }
+  },
+  "support": {
+    "issues": "https://youtrack.jetbrains.com/newIssue?project=WI"
+  }
+}
