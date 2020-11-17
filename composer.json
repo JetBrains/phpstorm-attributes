@@ -15,5 +15,10 @@
   },
   "support": {
     "issues": "https://youtrack.jetbrains.com/newIssue?project=WI"
-  }
+  },
+  "keywords": [
+    "phpstorm",
+    "jetbrains",
+    "attributes"
+  ]
 }
