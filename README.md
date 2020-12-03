@@ -36,7 +36,14 @@ Use Array Shape when you deal with object-like arrays and want to specify the ke
     ‘key3’ => ‘Foo’,
     ‘key3’ => App\PHP 8\Foo::class,
 ])]
-function functionName(...): array
+function functionName(
+    #[ArrayShape([
+        ‘key1’ => ‘int’,
+        ‘key2’ => ‘string’,
+        ‘key3’ => ‘Foo’,
+    ])]
+    array $parameter
+): array
 ```
 
 > The attribute works with PHP ≤ 7.4 if specified in one line.
