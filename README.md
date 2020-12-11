@@ -24,6 +24,7 @@ Provide the explanation tip in `reason`  and updating suggestion in `replacement
     replacement: '%class%->setPublic(!%parameter0%)'
 )]
 ```
+![Deprecated](https://blog.jetbrains.com/wp-content/uploads/2020/10/deprecated_symfony.gif)
 
 ## `#[ArrayShape]`
 Use Array Shape when you deal with object-like arrays and want to specify the keys’ names and types for values to get better coding assistance.
@@ -40,6 +41,8 @@ function functionName(...): array
 ```
 
 > The attribute works with PHP ≤ 7.4 if specified in one line.
+
+![ArrayShape](https://blog.jetbrains.com/wp-content/uploads/2020/10/arrayshape.gif)
 
 ## `#[Immutable]`
 Mark properties or entire objects with this attribute if you want to guarantee they won't be changed after initialization.
@@ -59,6 +62,8 @@ class DTO
 
 > The attribute works with PHP ≤ 7.4 if specified in one line.
 
+![Immutable](https://blog.jetbrains.com/wp-content/uploads/2020/10/immutable.png)
+
 ## `#[Pure]`
 Use this attribute for functions that do not produce any side effects. All such PHP internal functions are already marked in PhpStorm.
 
@@ -69,6 +74,8 @@ function compare(Foo $a, Foo $b): int
     return $a->a <=> $b->b;
 }
 ```
+
+![Pure](https://blog.jetbrains.com/wp-content/uploads/2020/10/pure_add.png)
 
 ## `#[ExpectedValues]`
 Use this attribute to specify which values exactly a function accepts as parameters and which it can return. This will improve coding assistance.
@@ -82,6 +89,8 @@ function response(
 }
 ```
 
+![ExpectedValues](https://blog.jetbrains.com/wp-content/uploads/2020/10/count_expectedvalue.png)
+
 ## `#[NoReturn]`
 Mark functions that terminate script execution as exit points with this attribute to get a more accurate control flow analysis.
 
@@ -93,8 +102,12 @@ function redirect(): void {
 }
 ```
 
+![NoReturn](https://blog.jetbrains.com/wp-content/uploads/2020/10/noreturn.gif)
+
 ## `#[Language]`
 Add this attribute to mark string parameters that contain text in some other [programming] language, for example, RegExp, SQL, and so on. This will improve highlighting and reveal additional features of PhpStorm for you.
+
+![Language](https://blog.jetbrains.com/wp-content/uploads/2020/12/attribute_language.gif)
 
 ## Bugs and feature requests
 Please report any issues to the PhpStorm issue tracker https://youtrack.jetbrains.com/newIssue?project=WI.
