@@ -12,12 +12,14 @@ use Attribute;
  *
  * {@see NoReturn::ANY_ARGUMENT}
  */
-#[Attribute(Attribute::TARGET_FUNCTION | Attribute::TARGET_METHOD)]
-class NoReturn {
+#[Attribute(Attribute::TARGET_FUNCTION|Attribute::TARGET_METHOD)]
+class NoReturn
+{
     /**
      * Use this constant to skip function argument on the specified position
      */
-    const ANY_ARGUMENT = 1;
+    public const ANY_ARGUMENT = 1;
+
     public function __construct(...$arguments)
     {
     }

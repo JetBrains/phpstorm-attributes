@@ -11,7 +11,8 @@ use Attribute;
  * @since 8.0
  */
 #[Attribute(Attribute::TARGET_PARAMETER)]
-class Language {
+class Language
+{
     /**
      * @param string $languageName Language name like "PHP", "SQL", "RegExp", etc...
      */
