@@ -10,7 +10,7 @@ use Attribute;
  *
  * @since 8.0
  */
-#[Attribute(Attribute::TARGET_FUNCTION|Attribute::TARGET_METHOD)]
+#[Attribute(Attribute::TARGET_FUNCTION | Attribute::TARGET_METHOD)]
 class Pure
 {
     /**

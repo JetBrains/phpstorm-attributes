@@ -8,10 +8,6 @@
       "homepage": "https://www.jetbrains.com"
     }
   ],
-  "require-dev": {
-    "php": "^8.0",
-    "friendsofphp/php-cs-fixer": "@stable"
-  },
   "autoload": {
     "psr-4": {
       "JetBrains\\PhpStorm\\": "src/"
@@ -24,9 +20,5 @@
     "phpstorm",
     "jetbrains",
     "attributes"
-  ],
-  "scripts": {
-    "cs": "php-cs-fixer fix -v --diff --dry-run",
-    "cs-fix": "php-cs-fixer fix -v --diff"
-  }
+  ]
 }
