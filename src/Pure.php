@@ -11,6 +11,12 @@ use Attribute;
  * @since 8.0
  */
 #[Attribute(Attribute::TARGET_FUNCTION | Attribute::TARGET_METHOD)]
-class Pure {
-
+class Pure
+{
+    /**
+     * @param bool $mayDependOnGlobalScope Whether the function result may be dependendent on anything except passed variables
+     */
+    public function __construct(bool $mayDependOnGlobalScope = false)
+    {
+    }
 }
