@@ -31,11 +31,11 @@ Use Array Shape when you deal with object-like arrays and want to specify the ke
 
 ```PHP
 #[ArrayShape([
- // ‘key’ => ’type’,
-    ‘key1’ => ‘int’,
-    ‘key2’ => ‘string’,
-    ‘key3’ => ‘Foo’,
-    ‘key3’ => App\PHP 8\Foo::class,
+ // 'key' => 'type',
+    'key1' => 'int',
+    'key2' => 'string',
+    'key3' => 'Foo',
+    'key3' => App\PHP8\Foo::class,
 ])]
 function functionName(...): array
 ```
