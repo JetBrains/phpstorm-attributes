@@ -46,6 +46,19 @@ function functionName(...): array
 
 ![ArrayShape](https://blog.jetbrains.com/wp-content/uploads/2020/10/arrayshape.gif)
 
+
+## `#[ObjectShape]`
+The attribute specifies possible object field names and their types. If applied, an IDE will suggest the specified field names and infer the specified types.
+
+```PHP
+#[ObjectShape(["age" => "int", "name" => "string"])]
+function functionName(): object {...}
+
+$obj = functionName();
+```
+
+This usage effectively means that the `$obj` has 2 fields, the names are `age` and `name`, and the corresponding types are `int` and `string`.
+
 ## `#[Immutable]`
 Mark properties or entire objects with this attribute if you want to guarantee they won't be changed after initialization.
 
