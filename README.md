@@ -1,3 +1,5 @@
+[![official JetBrains project](https://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 # PhpStorm attributes
 
 Use these PHP 8 attributes in PhpStorm to get more advanced code completion and analysis.
