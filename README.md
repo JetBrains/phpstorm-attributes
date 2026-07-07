@@ -124,6 +124,17 @@ Add this attribute to mark string parameters that contain text in some other [pr
 
 ![Language](https://blog.jetbrains.com/wp-content/uploads/2020/12/attribute_language.gif)
 
+## `#[FileReference]`
+Add this attribute to mark string parameters that contain a file or directory path, provide optional `basePath` if necessary.
+
+The IDE will inject file references into the passed strings, enabling navigation, rename and move support, and path completion inside your project.
+
+```PHP
+function load(#[FileReference(basePath: 'config/'] string $path) {
+    //...
+}
+```
+
 ## Bugs and feature requests
 Please report any issues to the PhpStorm issue tracker https://youtrack.jetbrains.com/newIssue?project=WI.
 
